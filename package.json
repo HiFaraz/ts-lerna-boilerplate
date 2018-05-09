@@ -6,6 +6,6 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "setup": "rm -rf git && git init && rm package.json && cp internals/* . && rm -rf internals && npm install"
+    "setup": "rm -rf .git && git init && rm package.json && cp internals/* . && rm -rf internals && npm install"
   }
 }
