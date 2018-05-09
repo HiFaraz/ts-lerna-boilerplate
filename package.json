@@ -6,6 +6,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "setup": "rm -rf .git && git init && rm package.json && cp internals/* . && rm -rf internals && npm install"
+    "setup": "npm install && rimraf .git && git init && rm package.json && mv internals/* . && rm -r internals && rimraf node_modules && npm install"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.2"
   }
 }
